@@ -60,13 +60,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  let pal = "";
+  let frase = "";
   for (let i = 0; i < palabras.length; i++){
-    pal = pal + " " + palabras[i];
+    frase += palabras[i] + " ";
   }
-  return  ("'" + pal + "'");
+  frase = frase.substring(0, frase.length - 1);
+  return  frase;
 }
-
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
